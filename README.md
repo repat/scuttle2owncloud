@@ -12,6 +12,7 @@ Scuttle is not really activly maintained, plus I thought it might be nice to hav
 * email: repat[at]repat[dot]de
 * XMPP: repat@jabber.ccc.de
 * Twitter: [repat123](https://twitter.com/repat123 "repat123 on twitter")
+* Flattr: [repat](https://flattr.com/profile/repat "repat on flattr")
 
 ### Copyright
 Pretty much do-whatever-you-want
