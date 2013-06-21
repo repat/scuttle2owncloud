@@ -17,7 +17,8 @@ Upload the two files and run *scuttle2owncloud.php*.
 * email: repat[at]repat[dot]de
 * XMPP: repat@jabber.ccc.de
 * Twitter: [repat123](https://twitter.com/repat123 "repat123 on twitter")
-* Flattr: [repat](https://flattr.com/profile/repat "repat on flattr")
+
+[![Flattr this git repo](http://api.flattr.com/button/flattr-badge-large.png)](https://flattr.com/submit/auto?user_id=repat&url=https://github.com/repat/scuttle2owncloud&title=scuttle2owncloud&language=&tags=github&category=software) 
 
 ### Copyright
 Pretty much do-whatever-you-want
