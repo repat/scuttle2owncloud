@@ -2,7 +2,7 @@
 /**
 * scuttle2owncloud_config.php
 * released under MIT License(see extra file)
-* version 0.9
+* version 0.9.1
 * (c) by repat, <repat[at]repat[dot]de>, http://repat.de
 * June 2013
 */
@@ -15,6 +15,8 @@ $scuttlePassword = "";
 $scuttleDb = "";
 $scuttleBmTable = "sc_bookmarks";
 $scuttleTagsTable = "sc_tags";
+// uncommend this in case of semantic scuttle
+//$scuttleTagsTable = "sc_bookmarks2tags";
 
 $owncloudHost = "localhost";
 $owncloudUser = "";
