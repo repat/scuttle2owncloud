@@ -82,11 +82,11 @@ $fixEscStrTResult = mysql_query('UPDATE ' . $owncloudTagsTable . " SET tag = '' 
 if (!$fixEscStrTResult) {
    	die('Illegal fixEscStrResult-query: ' . mysql_error());
 }
-echo "<br />Fixed system:unfiled entries.<br />";
+echo "<p>Fixed system:unfiled entries.</p>";
 	
 // Close both MySQL connections
 mysql_close($scLink);
-mysql_close($owLink);
+mysql_close($ocLink);
 
 echo "<p>Everything worked fine: Converted " . $entries .  " entries with " . $tags . " tags.</p>";
 ?>
