@@ -54,6 +54,8 @@ while ($bmRow = mysql_fetch_row($scResultBm)) {
 	if (!$ocResultBm) {
 		die('Illegal ocResultBm-query: ' . mysql_error());
 	}
+
+	$bookmarkID = mysql_insert_id();
 	
 	// get the matching tags where bId = bId
 	$scResultT = mysql_query('SELECT bId, tag FROM ' . $scuttleTagsTable . " WHERE (bId = '" . $bmRow[$ID] . "')", $scLink);
@@ -62,7 +64,7 @@ while ($bmRow = mysql_fetch_row($scResultBm)) {
 	}
 	// get tag array and insert all the tags for current bookmark ID
 	while ($tRow = mysql_fetch_row($scResultT)) {
-		$ocResultT = mysql_query('INSERT INTO ' . $owncloudTagsTable . " (bookmark_id, tag) VALUES ( '" .  $bmRow[$ID] . "', '" .  mysql_real_escape_string($tRow[$TAG]) . "')", $ocLink);
+		$ocResultT = mysql_query('INSERT INTO ' . $owncloudTagsTable . " (bookmark_id, tag) VALUES ( '" . $bookmarkID . "', '" .  mysql_real_escape_string($tRow[$TAG]) . "')", $ocLink);
 		if (!$ocResultT) {
     		die('Illegal ocResultT-query: ' . mysql_error());
     		
