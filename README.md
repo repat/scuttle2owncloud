@@ -9,7 +9,6 @@ In case of semantic scuttle change the `$scuttleTagsTable`-variable.
 Upload the two files and run *scuttle2owncloud.php*.
 
 ## Known bugs/issues
-* tags don't work(it's in the code though, i have no idea why owncloud doesn't show them)
 * only MySQL (sqlite planned)
 
 ## Contact
